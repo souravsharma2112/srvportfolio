@@ -1,0 +1,17 @@
+.companyLogo{
+    display: inline-flex;
+    padding: 1.5rem ;
+    border-radius: 12px;
+    background-color: #3a404b1e;
+    backdrop-filter: 400px;
+}
+.projectGallery {
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.projectGallery::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,103 @@
+.header {
+  position: relative;
+  padding: 1rem 0rem;
+ 
+}
+.headerStickyBG {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding-block: 1rem;
+  transition: background-color 0.4s ease, 
+              padding 0.4s ease, 
+              box-shadow 0.4s ease,
+              backdrop-filter 0.4s ease;
+  background-color: rgba(0, 10, 30, 0.6);
+  backdrop-filter: blur(14px);
+  padding-block: 0.7rem; /* smooth shrink */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* Logo */
+.logo {
+  font-size: clamp(24px, 5vw, 32px);
+  letter-spacing: 0.4rem;
+  font-weight: 800;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #5FA8F5, var(--accent-color));
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 4s ease infinite;
+}
+
+/* Overlay (Fade In) */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.55);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.3s ease forwards;
+  display: flex;
+}
+
+/* Drawer (Slide Animation) */
+.drawer {
+  width: 260px;
+  height: 100vh;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  padding-top: 4rem;
+  animation: slideIn 0.5s cubic-bezier(0.25, 1, 0.3, 1) forwards;
+  box-shadow: 3px 0 20px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+/* Close Button */
+.closeBtn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateX(-270px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.hamburger{
+  display: none;
+}
+@media (max-width:960px){
+  .desktopNav{
+    display: none;
+  }
+  .hamburger{
+    display: block;
+  }
+}

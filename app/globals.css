@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+  --primary-color: #0f172a;
+  --secondary-color: #1e293b;
+  --accent-color: #3b82f6;
+  --text-color: #f1f5f9;
+  --heading-dark: #707070;
+  --para-color:#d8d8d8;
+  --box-shadow: 0 0 60px 20px #3b83f646;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+/* ========== utils =========== */
+
+.spacingTop{
+  padding-top: 80px;
+}
+/* ============== container ============== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  width: 84vw;
+}
+.btn{
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  transition: all ease-in-out .5s;
+}
+.btnProjectGallery{
+  background-color: #000000;
+  color: #ffffff;
+  backdrop-filter: 20px;
+}
+.btnPrimary{
+  border: 1px solid transparent;
+  transition: all ease-in-out .5s;
+  background-color: var(--accent-color);
+}
+.btnFilled{
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  transition: all ease-in-out .5s;
+}
+.btn:hover{
+  box-shadow: var(--box-shadow);
+}
+
+/* ============== section content ============ */
+.sectionContent h2{
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.sectionContent h2 span{
+  color: var(--accent-color);
+}
+.sectionContent h3{
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+  font-family: var(--font-lato);
+  color: var(--heading-dark);
+}
+.sectionContent h4{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--text-color);
 }
