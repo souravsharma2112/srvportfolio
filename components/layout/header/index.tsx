@@ -8,6 +8,7 @@ import Container from '@/components/ui/container'
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import { useEffect, useState } from 'react'
+import Logo from '@/components/ui/logo'
 
 const Header = () => {
     const [openDrawer, setDrawerOpen] = useState<boolean>(false)
@@ -38,11 +39,7 @@ const Header = () => {
                     >
                         <HiOutlineMenuAlt1 />
                     </button>
-                    <div aria-label="logo">
-                        <Link href={"/"} className={`${styles.logo} ${styles.gradientText}`}>
-                            <span>SRV</span>
-                        </Link>
-                    </div>
+                    <Logo/>
                     <nav className={styles.desktopNav}>
                         <ul className="flex items-center gap-8">
                             {navItems.map((item, index) => (

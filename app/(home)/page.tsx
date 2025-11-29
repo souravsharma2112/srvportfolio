@@ -1,4 +1,12 @@
-import { AboutSection, HeroSection, ServicesSection, WorkSection } from './_components'
+import {
+  AboutSection,
+  ContactSection,
+  HeroSection,
+  ProjectSection,
+  ServicesSection,
+  SkillSection,
+  WorkSection
+} from './_components'
 
 const page = () => {
   return (
@@ -7,6 +15,9 @@ const page = () => {
       <AboutSection />
       <ServicesSection />
       <WorkSection />
+      <SkillSection />
+      <ProjectSection />
+      <ContactSection />
     </main>
   )
 }

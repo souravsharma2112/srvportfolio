@@ -1,9 +1,11 @@
+"use client"
 import Container from '@/components/ui/container'
 import Image from 'next/image'
 import styles from './style.module.css'
 import ButtonLink from '@/components/ui/button'
 import Link from 'next/link'
 import { FaGithub, FaHackerrank, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
+import { useTypewriter } from '@/utils/helper'
 const socialLinks =[
     {name: "Instagram" , item : <FaInstagram size={22}/>},
     {name: "Linkedin" , item : <FaLinkedin size={22}/>},
@@ -12,13 +14,15 @@ const socialLinks =[
     {name: "HackerRank" , item : <FaHackerrank size={22}/>},
 ]
 const HeroSection = () => {
+    const text = useTypewriter(["React Native", "Next.js","Typescript","React"]);
     return (
         <section className=''>
             <Container>
                 <div className='flex gap-4'>
                     <div className={`flex-1 ${styles.sectionContent}`}>
                         <div className='mb-4'>
-                            <span>{`</> React Native`}</span>
+                            <span>{`</> ${text}`}</span>
+                            <span className="animate-pulse">|</span>
                         </div>
                         <div className='flex items-center gap-2'>
                             <h2>{`Hello! I'm`}</h2>
