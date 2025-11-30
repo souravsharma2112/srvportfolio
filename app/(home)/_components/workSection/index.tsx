@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from './style.module.css'
 import { FaLocationDot } from 'react-icons/fa6'
 import { BsCalendarDateFill } from 'react-icons/bs'
+import ProjectTabs from '@/components/ui/projectTabs'
+import ProjectCard from '@/components/common/projectCard'
 
 const WorkSection = () => {
     return (
@@ -37,17 +39,10 @@ const WorkSection = () => {
                     <div className='sectionContent'>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam rem labore nam modi et ipsa sequi, sed adipisci. Illo beatae quisquam velit iusto sed eius pariatur quidem eveniet explicabo illum. Quo culpa, deleniti corrupti pariatur, labore quas tempore voluptatibus laboriosam, earum perferendis neque a libero?</p>
                     </div>
-                    <div>
+                    <div className='my-8'>
                         <h5>Projects</h5>
-                        <div className={styles.projectGallery}>
-                            <ul className='flex items-center gap-3'>
-                                {Array.from({length:15}).map((item , index) => (
-                                    <li key={`project-${index} w-max`}>
-                                        <button className='btn w-max btnProjectGallery'>{`Project ${index}`}</button>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+                        <ProjectTabs />
+                        <ProjectCard/>
                     </div>
                 </article>
             </Container>

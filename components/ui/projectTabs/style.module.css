@@ -1,0 +1,35 @@
+.projectTabsWrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Scrollable */
+  .projectTabs {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    cursor: grab;
+    user-select: none;
+  }
+  
+  .projectTabs:active {
+    cursor: grabbing;
+  }
+  
+  /* Hide scrollbar */
+  .projectTabs::-webkit-scrollbar {
+    display: none;
+  }
+  .projectTabs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .tabItem {
+    flex-shrink: 0;
+  }
+  
