@@ -16,10 +16,10 @@ const socialLinks =[
 const HeroSection = () => {
     const text = useTypewriter(["React Native", "Next.js","Typescript","React"]);
     return (
-        <section className=''>
+        <section className={styles.heroSection}>
             <Container>
-                <div className='flex gap-4'>
-                    <div className={`flex-1 ${styles.sectionContent}`}>
+                <div className='flex gap-4 flex-col lg:flex-row'>
+                    <div className={`flex-1 ${styles.sectionContent} sectionContent`}>
                         <div className='mb-4'>
                             <span>{`</> ${text}`}</span>
                             <span className="animate-pulse">|</span>
@@ -29,7 +29,7 @@ const HeroSection = () => {
                             <h3>Sourav Kumar,</h3>
                         </div>
                         <h1>Frontend <span>Developer</span></h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure itaque autem eligendi animi quia nisi mollitia obcaecati quae! Accusamus, ipsum Accusamus, ipsum Accusamus, ipsum.</p>
+                        <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure itaque autem eligendi animi quia nisi mollitia obcaecati quae! Accusamus, ipsum Accusamus, ipsum Accusamus, ipsum.</p>
                         <div className={styles.socailLinks}>
                             <ul className='flex items-center gap-3'>
                                 {socialLinks?.map((item , index) => (
@@ -45,7 +45,7 @@ const HeroSection = () => {
                             <ButtonLink goto='/' title='Download CV' className='btnFilled' />
                         </div>
                     </div>
-                    <div className='flex justify-end'>
+                    <div className='flex justify-center lg:justify-end'>
                         <div className={styles.bannerContainer}>
                             <Image
                                 src="/images/sk.png"

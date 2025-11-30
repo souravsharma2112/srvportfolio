@@ -31,11 +31,11 @@
 
 
 .sectionContent p{
-    font-size: 18px;
+    font-size: clamp(15px,1.8vw,18px);
     font-weight: 300;
     color: var(--para-color);
     font-family: var(--font-lato);
-    line-height: 1.4;
+    /* line-height: 1.4; */
 }
 .statsContainer{
     margin-top: 80px;
@@ -47,13 +47,14 @@
     drop-shadow(0 12px 30px rgba(59, 131, 246, 0.12))
     drop-shadow(0 20px 45px rgba(0,0,0,0.15));
     background-color: #3a404b1e;
-    padding-block: 24px;
+    padding-block: clamp(12px,2vw,24px);
 }
 .statsContainer ul li{
     padding: 0px 24px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
     border-left: 1px solid #ffffff36;
 }
@@ -62,12 +63,45 @@
 }
 .statsContainer ul li span{
     color: var(--accent-color);
-    font-size: 32px;
+    font-size: clamp(24px,2vw,32px);
 }
 .statsContainer ul li h4{
     font-family: var(--font-lato);
     font-weight: 300;
     color: #DFDFDF;
-    font-size: 16px;
+    font-size: clamp(12px,2vw,16px);
     line-height: 1.2;
+}
+
+@media (max-width:1024px){
+    .aboutBanner{
+        height: max-content;
+    }
+    .aboutBanner img{
+        height: 370px;
+        width: 300px;
+    }
+    .statsContainer{
+    margin-top: 0px;
+}
+.statsContainer ul{
+    gap: clamp(16px,2.8vw,32px);
+}
+.statsContainer ul li{
+    border: none;
+}
+}
+
+@media (max-width:576px) {
+    .aboutBanner img{
+        height: 200px;
+        width: 200px;
+    }
+    .aboutBanner{
+        grid-template-columns: 100px 1fr;
+        gap: 1rem;
+    }
+    .statsContainer ul li{
+    padding: 0px 40px;
+}
 }

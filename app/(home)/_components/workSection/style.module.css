@@ -15,3 +15,13 @@
 .projectGallery::-webkit-scrollbar {
     display: none;
 }
+
+@media (max-width:576px) {
+    .companyLogo{
+        padding: 0.8rem;
+    }
+    .companyLogo img{
+        height: 50px;
+        width: 50px;
+    }
+}

@@ -22,7 +22,7 @@
     padding-bottom: 0.4rem;
 }
 .sectionContent p{
-    font-size: 18px;
+      font-size: clamp(14px,1.8vw,18px);
     font-weight: 300;
     color: var(--para-color);
     font-family: var(--font-lato);

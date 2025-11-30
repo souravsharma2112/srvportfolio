@@ -32,8 +32,22 @@ body {
   padding: 0 1rem;
   width: 84vw;
 }
+
+@media (max-width:576px) {
+  .container {
+  padding: 0 2rem;
+  width: 100%;
+}
+}
+@media (max-width:420px) {
+  .container {
+  padding: 0 1rem;
+  width: 100%;
+}
+}
+
 .btn{
-  padding: 0.8rem 2rem;
+  padding: clamp(8px,1.5vw,0.8rem) clamp(1rem,2.5vw,2rem);
   border-radius: 8px;
   text-transform: uppercase;
   transition: all ease-in-out .5s;
@@ -60,7 +74,7 @@ body {
 /* ============== section content ============ */
 .sectionContent h2{
   color: #ffffff;
-  font-size: 36px;
+  font-size: clamp(22px,2.8vw,36px);
   text-align: center;
   text-transform: capitalize;
 }
@@ -68,16 +82,22 @@ body {
   color: var(--accent-color);
 }
 .sectionContent h3{
-  font-size: 18px;
+  font-size: clamp(16px,1.5vw,18px);
+  line-height: 1.2;
   text-align: center;
   font-weight: 300;
   font-family: var(--font-lato);
   color: var(--heading-dark);
 }
 .sectionContent h4{
-  font-size: 22px;
+  font-size: clamp(17px,2.2vw,22px);
+  line-height: 1.2;
   font-weight: 500;
   color: var(--text-color);
+}
+
+.sectionContent p{
+  font-size: clamp(14px,1.8vw,18px);
 }
 
 

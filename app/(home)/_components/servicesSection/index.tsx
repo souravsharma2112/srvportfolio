@@ -45,7 +45,7 @@ const ServicesSection = () => {
                     <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
                 </div>
                 <div className='spacingTop'>
-                    <ul className='grid grid-cols-3 gap-4'>
+                    <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
                         {data?.map((item, index) => (
                             <li className={styles.experCard} key={`expertiese${index}`}>
                                 <article>

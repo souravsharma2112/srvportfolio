@@ -8,16 +8,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="w-full py-16 px-4 md:px-8 lg:px-16 relative">
+    <div className="w-full py-8 mt-3 px-4 md:px-8 lg:px-16 relative">
       
       <div className={`${styles.bgGlow}`}></div>
 
-      <div className="max-w-3xl mx-auto backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-2xl p-8 relative z-10">
-
-        <h2 className="text-3xl font-bold text-white mb-8 text-center">
-          Contact <span className="text-blue-400">Me</span>
-        </h2>
-
+      <div className="max-w-3xl mx-auto relative z-10">
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
           {/* Name */}
           <div className="flex flex-col gap-1">

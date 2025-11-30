@@ -22,7 +22,7 @@ const ProjectSection = () => {
                     <h2>Portfolio</h2>
                     <h3>My Technical Skills.</h3>
                 </div>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {projects?.map((item, index) => (
                         <ProjectCard
                             key={`project-${index}`}

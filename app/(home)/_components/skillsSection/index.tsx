@@ -53,7 +53,7 @@ const SkillSection = () => {
                     <h2>Skills</h2>
                     <h3>My Technical Skills.</h3>
                 </div>
-                <div className="grid grid-cols-6 gap-3">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-3">
                     {data?.map((item,index) => (
                         <SkillCard
                         key={`skill${index}`}

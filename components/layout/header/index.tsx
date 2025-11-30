@@ -37,7 +37,7 @@ const Header = () => {
                         className={styles.hamburger}
                         onClick={handleDrawerOpen}
                     >
-                        <HiOutlineMenuAlt1 />
+                        <HiOutlineMenuAlt1 size={30} />
                     </button>
                     <Logo/>
                     <nav className={styles.desktopNav}>

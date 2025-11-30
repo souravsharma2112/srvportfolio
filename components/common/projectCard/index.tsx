@@ -22,7 +22,7 @@ const ProjectCard = () => {
     return (
         <div className={styles.projectCard}>
             <video src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" controls autoPlay muted loop></video>
-            <div className='grid grid-cols-2 place-items-center gap-4 h-full'>
+            <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center gap-4 h-full'>
                 <div>
                     <div className='p-[32px] border rounded-md'>
                         <div className={styles.videoContainer}>
