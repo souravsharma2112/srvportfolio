@@ -19,20 +19,7 @@
 }
 
 /* Logo */
-.logo {
-  font-size: clamp(24px, 5vw, 32px);
-  letter-spacing: 0.4rem;
-  font-weight: 800;
-}
 
-.gradientText {
-  background: linear-gradient(135deg, #5FA8F5, var(--accent-color));
-  background-size: 200% 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientFlow 4s ease infinite;
-}
 
 /* Overlay (Fade In) */
 .overlay {
