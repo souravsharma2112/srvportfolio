@@ -23,7 +23,11 @@ body {
 /* ========== utils =========== */
 
 .spacingTop{
-  padding-top: 80px;
+  padding-top: clamp(16px,6vw,60px);
+}
+
+.spacingY{
+  padding-block: clamp(16px,6vw,60px);
 }
 /* ============== container ============== */
 .container {

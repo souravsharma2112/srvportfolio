@@ -4,7 +4,7 @@ import Container from "@/components/ui/container"
 
 const ContactSection = () => {
   return (
-    <section>
+    <section className="spacingY">
         <Container>
              <div className={'sectionContent'}>
                     <h2>Contact</h2>

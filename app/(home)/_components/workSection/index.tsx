@@ -8,7 +8,7 @@ import ProjectCard from '@/components/common/projectCard'
 
 const WorkSection = () => {
     return (
-        <section>
+        <section className='spacingY'>
             <Container>
                 <div className='sectionContent'>
                     <h2>Work Experience</h2>

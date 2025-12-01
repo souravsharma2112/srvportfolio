@@ -47,7 +47,7 @@ const data = [
 
 const SkillSection = () => {
     return (
-        <section>
+        <section className='spacingY'>
             <Container>
                 <div className={'sectionContent'}>
                     <h2>Skills</h2>

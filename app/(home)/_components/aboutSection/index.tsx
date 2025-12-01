@@ -10,13 +10,13 @@ const statsData = [
 ]
 const AboutSection = () => {
   return (
-    <section>
+    <section className='spacingY'>
       <Container>
         <div className={`sectionContent`}>
           <h2>About <span>Me</span></h2>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <h3>Always learning. Always building. Always improving.</h3>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 spacingTop'>
           <div className={`order-2 lg:order-1 grid grid-cols-2 lg:block ${styles.aboutBanner}`}>
             <Image
               src={"/images/aboutsrv.png"}
@@ -37,7 +37,9 @@ const AboutSection = () => {
             </div>
           </div>
           <div className={`${styles.sectionContent} sectionContent order-1 lg:order-2 flex flex-col justify-center`}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eaque eum unde consequuntur quos dolor itaque? Reprehenderit unde obcaecati officia quas temporibus aperiam atque ipsa porro ratione ex accusantium accusamus tempore laborum nulla soluta iste, facilis libero illum nesciunt perferendis exercitationem excepturi! Perspiciatis itaque error ducimus magni eligendi ratione ipsum amet, debitis recusandae aut, commodi fuga consequuntur perferendis animi aspernatur doloribus veniam ipsa fugit autem! Quam dolor numquam minima commodi earum consequuntur nam, quasi ducimus nulla at excepturi aut repellendus voluptas voluptatibus modi reprehenderit tenetur sint quidem velit nobis vitae eaque!</p>
+            <p>I am a passionate Frontend Developer specializing in Next.js and React Native, with 1+ years of hands-on experience delivering production-ready web and mobile applications. Over time, I have built more than 20+ web apps and 10+ mobile apps, spanning diverse domains such as CMS platforms, Job Portals, Resume Builders, Ed-Tech dashboards, and OTT applications.<br/>
+I have strong expertise in implementing end-to-end authentication, including JWT-based auth, OAuth social logins, and middleware-protected routes for secure user access. I’ve also integrated popular payment gateways like Razorpay and Stripe to support smooth and reliable transactions across platforms.<br/>
+I enjoy creating fast, scalable, and intuitive user experiences—always focused on clean code, modern design patterns, and performance optimization. My goal is to build impactful digital products that deliver real value to users while continuously improving my skills as a developer.</p>
             <div className='mt-8'>
               <ButtonLink goto='/' title='Download CV' className='btn btnPrimary' />
             </div>

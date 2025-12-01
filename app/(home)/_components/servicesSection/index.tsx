@@ -42,7 +42,7 @@ const ServicesSection = () => {
             <Container>
                 <div className={'sectionContent'}>
                     <h2>Services</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+                    <h3>Committed to delivering quality with every line of code.</h3>
                 </div>
                 <div className='spacingTop'>
                     <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>

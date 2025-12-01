@@ -19,27 +19,27 @@ const navLinks = [
 
 const socialLinks = [
   { icon: <FaInstagram />, href: "https://instagram.com" },
-  { icon: <FaDribbble />, href: "https://dribbble.com" },
+  // { icon: <FaDribbble />, href: "https://dribbble.com" },
   { icon: <FaGithub />, href: "https://github.com" },
-  { icon: <FaBehance />, href: "https://behance.net" },
+  // { icon: <FaBehance />, href: "https://behance.net" },
 ];
 
 const contactLinks = [
   {
     icon: <MdEmail className="text-lg" />,
-    label: "mahmood.fazile7005@gmail.com",
-    href: "mailto:mahmood.fazile7005@gmail.com",
+    label: "souravsharma2102@gmail.com",
+    href: "mailto:souravsharma2102@gmail.com",
   },
   {
     icon: <FaPhoneAlt className="text-lg" />,
-    label: "+93 729 107 005",
-    href: "tel:+93729107005",
+    label: "+91 9471553299",
+    href: "tel:+919471553299",
   },
 ];
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#111] text-gray-300 py-12 px-4 md:px-8 lg:px-16">
+    <footer className="w-full bg-[#1e293b] text-gray-300 py-12 px-4 md:px-8 lg:px-16">
       <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
 
         {/* Logo */}
@@ -84,7 +84,7 @@ export default function Footer() {
 
         {/* Credit */}
         <p className="text-xs text-gray-400 text-center">
-          Designed by @mahmood.fazile UI/UX designer
+          &copy; 2025 <strong>Sourav Sharma</strong> • Frontend Developer • All rights reserved.
         </p>
       </div>
     </footer>

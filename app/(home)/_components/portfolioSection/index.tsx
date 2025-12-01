@@ -16,7 +16,7 @@ const projects = [
 
 const ProjectSection = () => {
     return (
-        <section>
+        <section className='spacingY'>
             <Container>
                 <div className={'sectionContent'}>
                     <h2>Portfolio</h2>

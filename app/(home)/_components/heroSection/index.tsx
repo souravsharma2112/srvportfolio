@@ -29,7 +29,7 @@ const HeroSection = () => {
                             <h3>Sourav Kumar,</h3>
                         </div>
                         <h1>Frontend <span>Developer</span></h1>
-                        <p className='mt-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure itaque autem eligendi animi quia nisi mollitia obcaecati quae! Accusamus, ipsum Accusamus, ipsum Accusamus, ipsum.</p>
+                        <p className='mt-4'>Passionate Frontend Developer specializing in Next.js and React Native with 1+ years of hands-on experience building production-ready web and mobile applications.</p>
                         <div className={styles.socailLinks}>
                             <ul className='flex items-center gap-3'>
                                 {socialLinks?.map((item , index) => (
