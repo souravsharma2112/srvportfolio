@@ -119,3 +119,68 @@ body {
   -webkit-text-fill-color: transparent;
   animation: gradientFlow 4s ease infinite;
 }
+
+
+
+/* ================= badges ================ */
+/* Base Badge Style */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  line-height: 1;
+  user-select: none;
+  width: fit-content;
+}
+
+/* Primary Badge */
+.badge-primary {
+  background-color: #6366f1; /* Indigo */
+  color: white;
+}
+
+/* Secondary Badge */
+.badge-secondary {
+  background-color: #e5e7eb; /* Light gray */
+  color: #111827; /* Almost black */
+}
+
+/* Success Badge */
+.badge-success {
+  background-color: #22c55e;
+  color: white;
+}
+
+/* Warning Badge */
+.badge-warning {
+  background-color: #facc15;
+  color: #1f2937;
+}
+
+/* Danger Badge */
+.badge-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* Gradient Badge */
+.badge-gradient {
+  background: linear-gradient(90deg, #7c3aed, #ec4899);
+  color: white;
+}
+
+/* Outline Badge */
+.badge-outline {
+  background: transparent;
+  border: 1px solid #6b7280;
+  color: #6b7280;
+}
+
+/* Hover effect (Optional) */
+.badge:hover {
+  opacity: 0.85;
+  cursor: default;
+}
